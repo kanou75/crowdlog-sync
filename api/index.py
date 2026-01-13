@@ -69,6 +69,10 @@ def main():
                 }
             return JSONResponse(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, content=content)
 
+@app.get("/")
+def root():
+    return main()   # sync処理を呼ぶ
+
 
 def sendapi(url, headers):
     response = requests.get(url,headers=headers)
