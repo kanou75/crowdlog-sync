@@ -8,7 +8,7 @@
   "crons": [
     {
       "path": "/sync",
-      "schedule": "0 12 * * 1"
+      "schedule": "30 13 * * 1"
     }
   ]
 }
